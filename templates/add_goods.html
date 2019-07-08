@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="" method="post" enctype="multipart/form-data">
+    {{ message }}
+    <select name="cate" id="">
+        {% for i in cate %}
+        <option value="{{ i.id }}">{{ i.name }}</option>
+        {% endfor %}
+    </select>
+    <input type="file" name="img">
+    <input type="text" name="name">
+    <input type="text" name="price">
+    <button type="submit">添加分类</button>
+</form>
+</body>
+</html>
